@@ -7,7 +7,8 @@ public class Node {
 	 private int id;
 	 private String name; 
 	 private String weapon;
-	 private String element; 
+	 private String element;
+	 private String rarity;
 	 
 	 // storage for the address of the next node
 	 private Node next;
@@ -23,6 +24,7 @@ public class Node {
 		 name = "";
 		 weapon = "";
 		 element = "";
+		 rarity = "";
 		 next = null;
 		 prev = null;
 		 
@@ -69,6 +71,14 @@ public class Node {
 
 	 public void setElement(String element) {
 		 this.element = element;
+	 }
+	 
+	 public String getRarity() {
+		 return rarity;
+	 }
+
+	 public void setRarity(String rarity) {
+		 this.rarity = rarity;
 	 }
 
 	 public Node getNext() {
